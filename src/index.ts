@@ -81,7 +81,7 @@ export const getConfigPath = async ({
     cache?: boolean;
     srcDirName?: string;
     encoding?: "ascii" | "utf8" | "utf-8" | "utf16le" | "utf-16le" | "ucs2" | "ucs-2" | "base64";
-}): Promise<null | ReadValueType> => {
+}): Promise<null | string> => {
     if (cache && pathsCacheMap[configFileNameWithExtension]) {
         return pathsCacheMap[configFileNameWithExtension];
     }
