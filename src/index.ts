@@ -119,3 +119,16 @@ export const getConfigPath = async ({
 
     return null;
 };
+
+export type MaybePromise<T> = (() => Promise<T> | T) | T;
+export const createMaybePromise = <T>(value: MaybePromise<T>): MaybePromise<T> => {
+    return value;
+};
+
+export const valueOf = async <T>(v?: MaybePromise<T>): Promise<T | undefined> => {
+    if (typeof v === "function") {
+        return await (v as Function)();
+    }
+    return v;
+};
+

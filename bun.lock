@@ -3,6 +3,9 @@
   "workspaces": {
     "": {
       "name": "root-finder-kt",
+      "dependencies": {
+        "locate-config-kt": "^1.1.0",
+      },
       "devDependencies": {
         "@types/bun": "latest",
         "@types/node": "^20.2.0",
@@ -180,6 +183,8 @@
     "lines-and-columns": ["lines-and-columns@1.2.4", "", {}, "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg=="],
 
     "load-tsconfig": ["load-tsconfig@0.2.5", "", {}, "sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg=="],
+
+    "locate-config-kt": ["locate-config-kt@1.1.0", "", { "peerDependencies": { "find-root-kt": "^1.0.0", "typescript": "^5" } }, "sha512-1WSKXBCYyYtU4dx1enE5fRCd9h0vgWgpVPaUc0cSbf4JH5D5bK6d5Npwx/DD5Vy3bnLZ09VaS1XMkHTbGgT0vg=="],
 
     "lodash.sortby": ["lodash.sortby@4.7.0", "", {}, "sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA=="],
 
